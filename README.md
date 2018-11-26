@@ -79,3 +79,16 @@ pnorm(mtcars$carb, mean(mtcars$carb), sd(mtcars$carb))
 
 
 3. Write a program to create boxplot for all variables.
+
+par(mfrow=c(3,4))
+boxplot(mtcars$mpg, xlab = "mpg")
+boxplot(mtcars$cyl, xlab = "cyl")
+boxplot(mtcars$disp, xlab = "disp")
+boxplot(mtcars$hp, xlab = "hp")
+boxplot(mtcars$drat, xlab = "drat")
+boxplot(mtcars$wt, xlab = "wt")
+boxplot(mtcars$qsec, xlab = "qsec")
+boxplot(mtcars$vs, xlab = "vs")
+boxplot(mtcars$am, xlab = "am")
+boxplot(mtcars$gear, xlab = "gear")
+boxplot(mtcars$carb, xlab = "carb")
